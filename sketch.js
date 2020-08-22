@@ -19,7 +19,8 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-    //paperBall = new Ball (50,780,20);
+    //paperBall = new Ball (50,580,20);
+    paperBall = new Ball(200,450,40);
     //ground = new Ground (350,790,700,20);
     ground = new Ground(width/2,670,width,20)
     dustbin=new Dustbin(1200,650);
@@ -32,9 +33,9 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(0);
-  //paperBall.display();
   ground.display();
   dustbin.display();
+  paperBall.display();
   //drawSprites();
  
 }
